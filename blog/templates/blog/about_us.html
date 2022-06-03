@@ -1,0 +1,10 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    {% for item in data %}
+        <h2>{{item.title}}</h2>
+        <p>{{item.about_text}}</p>
+        <p>{{item.address}}</p>
+        <p>{{item.fax}}</p>
+        <p>{{item.email}}</p>
+    {% endfor %}
+{% endblock %}
